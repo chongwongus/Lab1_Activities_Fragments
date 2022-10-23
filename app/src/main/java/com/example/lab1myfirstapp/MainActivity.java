@@ -13,46 +13,46 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("onCreate", "onCreate() started.");
+        Log.d(TAG, "onCreate() started in " + TAG + ".");
     }
 
     //onStart Override
     @Override
     protected void onStart() {
         super.onStart();
-        Log.e("onStart", "onStart() started.");
+        Log.e(TAG, "onStart() started in " + TAG + ".");
     }
 
     //onResume Override
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("onResume", "onResume() started.");
+        Log.i(TAG, "onResume() started in " + TAG + ".");
     }
 
     //onPause Override
     @Override
     protected void onPause() {
         super.onPause();
-        Log.v("onPause", "onPause() started.");
+        Log.v(TAG, "onPause() started in " + TAG + ".");
     }
 
     //onRestart Override
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.w("onRestart", "onRestart() started.");
+        Log.w(TAG, "onRestart() started in " + TAG + ".");
     }
 
     //onStop Override
     protected void onStop() {
         super.onStop();
-        Log.w("onStop", "onStop() started.");
+        Log.w(TAG, "onStop() started in " + TAG + ".");
     }
 
     //onDestroy Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.w("onDestroy", "onResume() started, DESTRUCTION IMMINENT.");
+        Log.w(TAG, "onResume() started, DESTRUCTION IMMINENT from " + TAG + ".");
     }
 }
